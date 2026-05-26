@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #1877f2;
+    }
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #1877f2;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .login-container button:hover {
+      background-color: #145dbf;
+    }
+    .login-container a {
+      display: block;
+      margin-top: 10px;
+      color: #1877f2;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .login-container .or {
+      margin: 15px 0;
+      font-weight: bold;
+      color: #555;
+    }
+    .facebook-btn {
+      background-color: #4267B2;
+      margin-top: 10px;
+    }
+    .facebook-btn:hover {
+      background-color: #365899;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Username" name="username" required>
+      <input type="password" placeholder="Password" name="password" required>
+      <button type="submit">Login</button>
+      <a href="#">Lost your password?</a>
+      <div class="or">OR</div>
+      <button type="button" class="facebook-btn">Login with Facebook</button>
+    </form>
+  </div>
+</body>
+</html>
